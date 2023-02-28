@@ -1,0 +1,25 @@
+.app {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import {App} from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+import styles from './App.module.css';
+
+export function App() {
+  return (
+    <div className={styles.app}>
+      <h1>Hello World</h1>
+    </div>
+  );
+}
